@@ -1,0 +1,7 @@
+./launch.sh install - Downloads docker image
+
+./launch.sh update - Updates docker image
+
+./launch.sh run - runs docker image like before using ros ip 127.0.0.1
+
+./launch.sh run <ip_address> -- runs docker image and passes custom ros ip address

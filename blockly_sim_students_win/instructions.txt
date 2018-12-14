@@ -1,0 +1,9 @@
+launch.bat install - Downloads docker image
+
+launch.bat update - Updates docker image
+
+launch.bat run - runs docker image like before using ros ip 127.0.0.1
+
+launch.bat run <ip_address> -- runs docker image and passes custom ros ip address
+
+
