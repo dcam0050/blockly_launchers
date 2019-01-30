@@ -43,7 +43,7 @@ REM run routine
 :runDocker
 echo Running in display mode...
 docker stop %containerName% 
-docker run -dit --rm --env="BLOCKLY_PORT=9000" --name=%containerName% --hostname=%HOSTNAME% --network=host --privileged -p 8080:8080 %imageName% ./mirosim.sh %arg2%
+docker run -dit --rm --env="BLOCKLY_PORT=9000" --name=%containerName% --hostname=%HOSTNAME% --privileged -p 8080:8080 -p 9000:9000 -p 1036:1036 %imageName% ./mirosim.sh %arg2%
 
 cd miro_sim_html && start_page.bat && cd .. &
 	
